@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14AB3533-1D1C-4ECD-82AF-59A620B8E903}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp21</RootNamespace>
+    <AssemblyName>WindowsFormsApp21</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DördünciSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DördünciSayfa.Designer.cs">
+      <DependentUpon>DördünciSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriSayfası.Designer.cs">
+      <DependentUpon>KategoriSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GirisSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisSayfasi.Designer.cs">
+      <DependentUpon>GirisSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreDegistir.Designer.cs">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetimekrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetimekrans.Designer.cs">
+      <DependentUpon>Yönetimekrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ödünç İade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ödünç İade.Designer.cs">
+      <DependentUpon>Ödünç İade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜçüncüSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İkinci_Sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İkinci_Sayfa.Designer.cs">
+      <DependentUpon>İkinci_Sayfa.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DördünciSayfa.resx">
+      <DependentUpon>DördünciSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriSayfası.resx">
+      <DependentUpon>KategoriSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GirisSayfasi.resx">
+      <DependentUpon>GirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreDegistir.resx">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetimekrans.resx">
+      <DependentUpon>Yönetimekrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ödünç İade.resx">
+      <DependentUpon>Ödünç İade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜçüncüSayfa.resx">
+      <DependentUpon>ÜçüncüSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İkinci_Sayfa.resx">
+      <DependentUpon>İkinci_Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
